@@ -1,15 +1,11 @@
-function binarySearch(arr, target) {
-  let left = 0, right = arr.length - 1;
+function reverseString(str) {
+    let result = "";
 
-  while (left <= right) {
-    let mid = Math.floor((left + right) / 2);
+    for (let i = str.length - 1; i >= 0; i--) {
+        result += str[i];
+    }
 
-    if (arr[mid] === target) return mid;
-    if (arr[mid] < target) left = mid + 1;
-    else right = mid - 1;
-  }
-
-  return -1;
+    return result;
 }
 
-console.log(binarySearch([1, 3, 5, 7, 9], 7));
+console.log(reverseString("Reshoo"));
