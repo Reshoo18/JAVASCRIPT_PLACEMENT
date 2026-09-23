@@ -1,6 +1,6 @@
 // for (let i = 1; i <= 10; i++) {
 //     console.log(i)
-// }\
+// }
 
 
 
@@ -80,11 +80,23 @@
 
 // }
 //  console.log("Total sum",sum)
-  let num=123456
-for(let i=0;i<6;i++){
+//   let num=123456
+// for(let i=0;i<6;i++){
   
-    let Ldig= num % 10
+//     let Ldig= num % 10
   
-   num= Math.floor(num/10)
-   console.log(Ldig)
+//    num= Math.floor(num/10)
+//    console.log(Ldig)
+// }
+
+
+let num = 1223334444;
+let count = {};
+
+while (num > 0) {
+    let digit = num % 10;
+    count[digit] = (count[digit] || 0) + 1;
+    num = Math.floor(num / 10);
 }
+
+console.log(count);
